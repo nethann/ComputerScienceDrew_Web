@@ -1,0 +1,56 @@
+.Page-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 1em;
+
+
+    height: 100vh;
+
+    color: var(--clr-section-font-color);
+    margin-bottom: 0px;
+
+
+
+
+}
+
+.Sections-info{
+    font-style: italic;
+    width: 80%;
+    background-color: var(--clr-card-clr);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.Page-Title{
+    font-size: 45px;
+    color: var(--clr-drew-green);
+}
+
+.Page-info{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 870px){
+    .Page-Title{
+        text-align: center;
+    }
+    .Ul{
+        text-align: center;
+        padding: 0px;
+        background-color: transparent;
+    }
+}
+
+
+
+@media screen and (max-width: 870px){
+    .Page-section{
+        height: 150vh;
+    }
+  }
+  

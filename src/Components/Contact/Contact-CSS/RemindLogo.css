@@ -1,0 +1,59 @@
+.Remind-Holder{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.085);
+
+    padding: 20px;
+    border-radius: 8px;
+
+    transition: all 0.1s ease-in;
+}
+
+.Remind-Holder:hover{
+    transform: translateY(-5px);
+}
+
+.RemindLogo{
+    width: 70px;
+    border-radius: 100%;
+}
+
+.Remind-Name{
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 18px;
+
+}
+
+.Platform-title{
+    margin-top: auto;
+    margin-bottom: auto;
+
+    color: var(--clr-drew-green);
+
+}
+
+
+.Remind-Join{
+    text-decoration: none;
+
+    width: 80%;
+    background-color: #ff6c2d29;
+    color: var(--clr-orange);
+    padding: 2px;
+    
+    border-radius: 20px;
+
+}
+
+.Remind-Join:hover{
+    color: var(--clr-orange);
+}

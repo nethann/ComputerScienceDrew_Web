@@ -1,0 +1,78 @@
+.bg-background{
+    background-color: var(--clr-nav);
+}
+
+
+.navbar-brand{
+    color: var(--clr-nav-font);
+}
+
+.navbar-brand:hover{
+    color: var(--clr-nav-clicked);
+}
+
+.navbar-brand:focus{
+    color: var(--clr-nav-clicked);
+}
+
+
+.nav-link{
+    text-align: center;
+    color: var(--clr-nav-font);
+}
+
+
+.nav-link:hover{
+    color: var(--clr-drew-green);
+}
+
+
+/* click color for regular navs */
+.nav-link:focus{
+    color: var(--clr-nav-clicked);
+}
+
+
+/* click color for dropdown */
+#basic-nav-dropdown:focus{
+    color: var(--clr-nav-clicked);
+}
+
+
+/* dropdown */
+.dropdown-menu{
+    border: 0px;
+    background-color: var(--clr-nav);
+}
+
+
+
+
+.dropdown-item{
+    color: var(--clr-nav-font);
+}
+
+.dropdown-item:hover{
+    background-color: var(--clr-drew-green);
+    color: white;
+}
+
+
+.dropdown-item:focus{
+    background-color: var(--clr-drew-green);
+    color: white;
+}
+
+.navbar-toggler{
+    border: 0px solid transparent;
+    background-color: var( --clr-nav-toggle-btn );
+}
+
+.navbar-collapse{
+    width: 100%;
+}
+
+
+
+
+

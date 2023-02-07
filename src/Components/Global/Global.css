@@ -1,0 +1,55 @@
+:root{
+
+    --clr-page-background: #232323;
+
+    --clr-drew-green: #6adca3;
+
+    /* Colors */
+    --clr-yellow: #ffbf00;
+    --clr-orange: #FF6D2D;
+    --clr-crimson: #AD1C42;
+
+
+    --clr-nav: #1d1d1d;
+    --clr-nav-font: white; 
+    --clr-nav-clicked: grey; 
+    --clr-nav-toggle-btn : #171717;
+
+    --clr-contact-button: rgba(90, 90, 90, 0.328);
+
+    --clr-card-clr: #1414145a;
+    --clr-card-clr-2: #1111117c;
+
+    --clr-section-font-color: white; 
+}
+
+#root {
+    background: var(--clr-page-background); 
+}
+
+
+html {
+    background: var(--clr-page-background); 
+}
+
+body{
+    background: var(--clr-page-background); 
+}
+
+
+.Page-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Page-container{
+    background-color: transparent;
+    width: 100%;
+}
+
+
+
+
+

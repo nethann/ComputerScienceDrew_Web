@@ -1,0 +1,36 @@
+.Expectations-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    border-bottom: 5px solid var(--clr-drew-green);
+
+}
+
+.Cource-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2em;
+
+    flex-direction: column;
+
+    background-color: transparent;
+}
+
+.i-frame{
+    display: grid;
+    place-items: center;
+    width: 80%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+
+    .i-frame{
+        width: 90%;
+    }
+
+}

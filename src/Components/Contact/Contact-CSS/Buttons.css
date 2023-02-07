@@ -1,0 +1,35 @@
+.Contact-button {
+    padding: 10px;
+
+    width: 60%;
+
+    background-color: var(--clr-contact-button);
+    border-radius: 5px;
+
+    transition: all 0.1s ease-in-out;
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.Contact-button:hover{
+    transform: translateY(-3px);
+
+    color: var(--clr-drew-green);
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .Contact-button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .Contact-button {
+        width: 100%;
+    }
+}

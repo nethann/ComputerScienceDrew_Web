@@ -1,0 +1,31 @@
+.Carousels-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 90%;
+    background-color: transparent;
+}
+
+
+.Carousel-text{
+    font-size: 25px;
+    color: var(--clr-drew-green);
+}
+
+.Carousel{
+    width: 100%;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+/* 
+@media screen and (max-width: 1000px){
+    .Carousel{
+        width: 100%;
+    }
+  } */
+  

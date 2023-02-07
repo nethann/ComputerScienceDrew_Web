@@ -1,0 +1,198 @@
+
+
+
+.Home-pathway{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+
+    /* background-color: #1d1d1d; */
+
+
+    padding: 20px;
+
+
+}
+
+.Pathway-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 2em;
+
+    color: white;
+
+
+    border-radius: 10px;
+    width: 90%;
+
+    background-color: transparent;
+
+}
+
+.Pathway-Title{
+    text-align: center;
+    font-size: 25px;
+    color: var(--clr-drew-green);
+}
+
+.Pathway-Info{
+    line-height: 2;
+    text-align: center;
+}
+
+/* ends  */
+
+.About-Teacher{
+    width: 70%;
+    background-color: var(--clr-card-clr);
+
+    padding: 40px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+
+.Teacher-Contact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+
+    gap: 0.5em;
+
+}
+
+
+.Teacher-Top{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    background-color: transparent;
+}
+
+.Jazmyne{
+    width: 70px;
+}
+
+.Teacher-Contact-btn{
+    border: 0px;
+    /* background-color: #ffbf002a;
+    color: var(--clr-yellow); */
+
+    background-color: #6adca32e;
+    color: var(--clr-drew-green);
+    padding: 2px;
+    width: 20%;
+
+
+    border-radius: 20px;
+
+    transition: all 0.1s ease-in;
+
+}  
+
+.Teacher-Contact-btn:hover{
+    transform: translateY(-2px);
+}
+
+.Teacher-Name{
+    color: var(--clr-drew-green);
+}
+
+.Teacher-Info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+/* section 3 */ 
+@media screen and (max-width: 1300px) {
+    .About-Teacher{
+        width: 75%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    .Teacher-Contact{
+        gap: 1em;
+        background-color: transparent;
+        width: 90%;
+    }
+
+
+    .About-Teacher{
+        width: 95%;
+        padding: 30px;
+    }
+
+    .Teacher-Info{
+        text-align: center;
+    }
+
+    .Teacher-Contact-btn{
+        width: 30%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .Home-pathway{
+        padding: 5px;
+    }
+
+    .Pathway-card{
+        width: 100%;
+    }
+
+    .Teacher-Contact-btn{
+        width: 35%;
+    }
+
+    .About-Teacher{
+        margin-bottom: 50px;
+    }
+
+    .Teacher-Name{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .Jazmyne{
+        width: 60px;
+    }
+
+    .Teacher-Contact-btn{
+        width: 50%;
+    }
+
+}
+
+
