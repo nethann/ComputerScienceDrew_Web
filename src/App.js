@@ -8,8 +8,11 @@ import Contact from './Components/Contact/Contact';
 import APComp from "./Components/Cources/AP-Computer/APComp";
 import WebDevelopment from './Components/Cources/Web-Development/WebDevelopment';
 
-//the developer login landing page
+//Developer login landing page
 import DeveloperLogin from './Components/DeveloperLogin/DeveloperLogin';
+
+//Developer SignUp landing page
+import DeveloperSignUp from './Components/DeveloperSignUp/DeveloperSignUp';
 
 //developer BACKEND
 import PrivateRoute from './PrivateRoute';
@@ -37,7 +40,7 @@ import "./Components/Global/Nav.css";
 //ICONS
 import { IoIosHammer } from 'react-icons/io';
 
-
+// Developer Page
 import Developer from './Components/Developer/Developer';
 
 
@@ -86,6 +89,9 @@ function App() {
             <Route element={<PrivateRoute/>}>
               <Route path="/developer" element={<Developer />} />
             </Route>
+
+            {/* Developer SignUp */}
+            <Route path="DeveloperSignUp" element={<DeveloperSignUp />} />
 
 
             {/* Cources */}

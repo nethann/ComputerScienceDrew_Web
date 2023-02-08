@@ -9,9 +9,6 @@
 
     margin-top: 40px;
 
-    /* background-color: #1d1d1d; */
-
-
     padding: 20px;
 
 
@@ -46,7 +43,6 @@
     text-align: center;
 }
 
-/* ends  */
 
 .About-Teacher{
     width: 70%;
@@ -89,8 +85,6 @@
 
 .Teacher-Contact-btn{
     border: 0px;
-    /* background-color: #ffbf002a;
-    color: var(--clr-yellow); */
 
     background-color: #6adca32e;
     color: var(--clr-drew-green);
@@ -120,7 +114,6 @@
 
 
 
-/* section 3 */ 
 @media screen and (max-width: 1300px) {
     .About-Teacher{
         width: 75%;

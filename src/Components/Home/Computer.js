@@ -10,20 +10,18 @@ import Typewriter from 'typewriter-effect';
 import "./Home-CSS/Computer.css"
 
 //model import 
-import VintageComputer from "./VintageComputer";
+import VintageComputer from "./VintageComputer"
 
 export default function Computer() {
     return (
         <div className='Model-div'>
             <div className='Model-holder'>
-                <Canvas camera={{ fov: 1, position: [5, 0, 50] }} >
-
+                <Canvas camera={{ fov:5, position:[10,0,10] }}>
 
                     <Suspense fallback={null}>
                         <Stage>
                             <VintageComputer />
                             <OrbitControls autoRotate enableZoom={false} />
-
                         </Stage>
                     </Suspense>
 

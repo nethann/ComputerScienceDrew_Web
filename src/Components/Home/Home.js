@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <div className='Page-align'>
       <div className='Page-container'>
-        <section >
-          <Computer />
+        <section>
+          <Computer /> 
         </section>
 
         <section className='Home-pathway'>
