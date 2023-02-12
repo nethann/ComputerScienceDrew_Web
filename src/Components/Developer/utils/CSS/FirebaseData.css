@@ -1,0 +1,63 @@
+.Firebase-holder{
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+
+
+    min-height: 85vh;
+}
+
+
+.Firebase-table{
+    color: white;
+
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.Special-tr{
+    border-bottom: 1px solid #dddddd69 ;
+}
+
+td,th{
+    /* border: 1px solid #dddddd53; */
+    text-align: left;
+    padding: 8px;
+
+    font-weight: normal;
+}
+
+tr:nth-child(even){
+    background-color: #343434 ;
+}
+
+
+.delete-th{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+}
+
+.del-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px ;
+
+    box-sizing: content-box;
+
+    background-color: transparent;
+
+    width: 100%;
+
+    color: var(--clr-crimson);
+
+}

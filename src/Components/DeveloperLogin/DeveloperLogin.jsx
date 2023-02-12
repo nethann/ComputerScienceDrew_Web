@@ -1,15 +1,16 @@
 import React from 'react'
 import { useState } from 'react';
-import Cookies from "universal-cookies"
 
 
 import { useNavigate } from 'react-router-dom';
+
 
 //CSS import 
 import "./CSS/DeveloperLogin.css";
 
 //ICONS Import 
-import { GiEagleEmblem } from "react-icons/gi"
+import { GiEagleEmblem } from "react-icons/gi";
+
 
 export default function DeveloperLogin() {
 
@@ -29,23 +30,25 @@ export default function DeveloperLogin() {
         let currentYear = date.getFullYear();
 
         if (inputText.toLowerCase() === `drew${currentYear}`) {
-            window.localStorage.setItem("Logging", true);
+            window.localStorage.setItem("Authenticated", true);
         }
 
         else {
-            window.localStorage.setItem("Logging", false);
+            console.log("wrong")
+            window.localStorage.removeItem("Authenticated");
         }
 
-        if (JSON.parse(localStorage.getItem("Logging")) === true) {
+        if (JSON.parse(localStorage.getItem("Authenticated")) === true) {
             navigate("/developer");
         }
 
     }
 
+
     const DeveloperSignUp = () => {
-        navigate("/developer");
-        // navigate("/DeveloperSignUp");
+        navigate("/DeveloperSignUp");
     }
+
 
     return (
         <div className='Page-align'>
@@ -74,11 +77,12 @@ export default function DeveloperLogin() {
                             />
                         </div>
 
-                        <button className='LogCheck-btn' onClick={() => { Logging() }}>Login</button>
+                        <button className='LogCheck-btn' onClick={() => {Logging()}}>Login</button>
 
                         <div className='Sign-up-Border'>
                             <button className='Sign-up' onClick={() => { DeveloperSignUp() }}>Register</button>
                         </div>
+
                     </div>
                 </section>
             </div>

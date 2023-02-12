@@ -1,21 +1,24 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"
-import firebase from "firebase"
+import { getAuth } from "firebase/auth";
+
+import { getDatabase } from "firebase/database";
+
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCu8w90M61vnb3A7YJMv2l67An7f0aaMdQ",
-    authDomain: "drew-computer-science-website.firebaseapp.com",
-    projectId: "drew-computer-science-website",
-    storageBucket: "drew-computer-science-website.appspot.com",
-    messagingSenderId: "1029219332201",
-    appId: "1:1029219332201:web:551050ba8f81168e4672f8",
-    measurementId: "G-81NSRFSC3G"
+    apiKey: "AIzaSyDCTp-mWD6PlmZwmJOTHjet70yF9VXoa1g",
+    authDomain: "drew-computer-science.firebaseapp.com",
+    projectId: "drew-computer-science",
+    storageBucket: "drew-computer-science.appspot.com",
+    messagingSenderId: "400369458765",
+    appId: "1:400369458765:web:f2331e27981ccf5351c604",
+    measurementId: "G-XQKQFXLL3S"
 };
+
 
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+const auth = getAuth(app);
+const db = getDatabase();
+export {auth, db}
 
-
-var database = firebase.database
