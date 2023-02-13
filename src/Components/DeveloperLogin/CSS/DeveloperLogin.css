@@ -19,7 +19,6 @@
     border-radius: 5px;
 
     padding: 30px;
-    /* background-color: var(--clr-card-clr); */
     
     width: 400px;
 
@@ -40,9 +39,9 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    color: var(--clr-drew-green);
+    color: var(--clr-yellow);
     padding: 10px;
-    background-color: #6adca32a;
+    background-color: #ffbf003d;
     border-radius: 20px;
 
     font-size: 25px;
@@ -62,7 +61,7 @@
     font-size: 14px;
 
     background-color: transparent;
-    color: var(--clr-crimson);
+    color: var(--clr-yellow);
 
 }
 
@@ -74,21 +73,25 @@
 }
 
 .Password-input{
-    border: 0px solid transparent;
+    border: 0px;
+    border-bottom: 2px solid white;
+
+    background-color: transparent;
     outline: none;
     width: 100%;
+    color: white;
 
     border-radius: 2px;
 }
 
 .LogCheck-btn{
-    border: 0px solid transparent;
-    background-color: var(--clr-drew-green);
-    color: black;
+    border: 0px;
+    background-color: #6adca335;
+    color: var(--clr-drew-green);
 
     border-radius: 2px;
     font-size: 15px;
-    padding: 2px;
+    padding: 3px;
 }
 
 

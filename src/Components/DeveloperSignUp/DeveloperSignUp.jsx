@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 //from Firebase
 import { ref, set, onValue } from "firebase/database";
@@ -7,6 +7,11 @@ import { db } from './Firebase';
 //react bootstrap
 import Dropdown from 'react-bootstrap/Dropdown';
 
+//CSS import 
+import "./CSS/DeveloperSignUp.css"
+
+//ICONS import 
+import { GiEagleHead } from "react-icons/gi"
 
 export default function DeveloperSignUp() {
   const [registerName, setregisterName] = useState("");
@@ -45,10 +50,10 @@ export default function DeveloperSignUp() {
     }
 
     else if (!registerEmail.includes("@drewcharterschools.org")) {
-      alert("Please enter proper email")
+      alert("Please make sure you enter your Drew email\nOr make sure it's ends with drewcharterschools.org")
     }
 
-    else if (gradeLevel === undefined) {
+    else if (gradeLevel === undefined || gradeLevel === '') {
       alert("Please select a grade level from the dropdown");
     }
 
@@ -76,41 +81,60 @@ export default function DeveloperSignUp() {
   }
 
   return (
-    <div style={{ color: "white" }}>
-
-      <p>Register</p>
-
-      <input
-        placeholder='First and Last Name'
-        type="text"
-        value={registerName}
-        onChange={(e) => { setregisterName(e.target.value) }}
-      />
-
-      <input
-        placeholder='Drew Email'
-        type="email"
-        value={registerEmail}
-        onChange={(e) => setRegisterEmail(e.target.value)}
-      />
+    <div className='Page-align'>
+      <div className='Page-container'>
+        <div className='DeveloperSignUp-Holder'>
 
 
-      <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Select Grade
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item onClick={() => { setGradeLevel("9th Grade") }}>9th Grade</Dropdown.Item>
-          <Dropdown.Item onClick={() => { setGradeLevel("10th Grade") }}>10th Grade</Dropdown.Item>
-          <Dropdown.Item onClick={() => { setGradeLevel("11th Grade") }}>11th Grade</Dropdown.Item>
-          <Dropdown.Item onClick={() => { setGradeLevel("12th Grade") }}>12th Grade</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+          <div className='Register-card-holder'>
 
 
-      <button onClick={userData}>Register</button>
+            <div className='SignUp-icon-holder'>
+              <p className='Margin-maker-txt SignUp-icon'><GiEagleHead /></p>
+            </div>
 
+            <p className='Margin-maker-txt Register-title'>Register</p>
+
+            <p className='Registration-Info'>Register here if you are interested on updating the website.</p>
+            <div className='SignUp-Input'>
+              <p className='Input-above-txt Margin-maker-txt'>First & Last name:</p>
+              <input
+                className='SignUp-Input-field'
+                type="text"
+                value={registerName}
+                onChange={(e) => { setregisterName(e.target.value.toLowerCase()) }}
+              />
+            </div>
+
+            <div className='SignUp-Input'>
+              <p className='Input-above-txt Margin-maker-txt'>Drew Email:</p>
+              <input
+                className='SignUp-Input-field'
+                type="email"
+                value={registerEmail}
+                onChange={(e) => setRegisterEmail(e.target.value.toLowerCase())}
+              />
+            </div>
+
+
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select Grade
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={() => { setGradeLevel("9th Grade") }}>9th Grade</Dropdown.Item>
+                <Dropdown.Item onClick={() => { setGradeLevel("10th Grade") }}>10th Grade</Dropdown.Item>
+                <Dropdown.Item onClick={() => { setGradeLevel("11th Grade") }}>11th Grade</Dropdown.Item>
+                <Dropdown.Item onClick={() => { setGradeLevel("12th Grade") }}>12th Grade</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
+
+            <button className='RegisterButton' onClick={userData}>Register</button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

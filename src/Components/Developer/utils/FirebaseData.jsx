@@ -6,9 +6,12 @@ import { db } from '../../DeveloperSignUp/Firebase';
 import { ref, onValue, remove } from "firebase/database";
 
 import "./CSS/FirebaseData.css";
+import "./CSS/DeveloperTabs.css"
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
+
 
 export default function DataFetch() {
     const [firebaseData, setfirebaseData] = useState([]);
@@ -47,11 +50,11 @@ export default function DataFetch() {
             <table className='Firebase-table' >
                 <thead>
                     <tr className='Special-tr'>
-                        <th style={{ width: "25%" }}>Name</th>
-                        <th>Email</th>
-                        <th style={{ width: "15%" }}>Grade</th>
-                        <th style={{ width: "20%" }}>Date</th>
-                        <th style={{ width: "10%" }}>Delete</th>
+                        <th className='th-1'>Name</th>
+                        <th className='th-2'>Email</th>
+                        <th className='th-3'>Grade</th>
+                        <th className='th-4'>Date</th>
+                        <th className='th-5'>Delete</th>
                     </tr>
                 </thead>
 
@@ -61,37 +64,15 @@ export default function DataFetch() {
                         return (
                             <>
                                 <tr>
-                                    <th>{item.Key}</th>
-                                    <th>{item.data.email}</th>
-                                    <th>{item.data.grade}</th>
-                                    <th>{item.data.date}</th>
-                                    {/* <th className='delete-th'>
-                                    <button onClick={() => { remove(ref(db, 'Users/' + item.Key)) }} className='del-btn'>{<FaTrash />}</button>
-                                </th> */}
-                                    <th className='delete-th'>
-                                        <button onClick={handleShow} className='del-btn'>{<FaTrash />}</button>
-                                    </th>
+                                    <td>{item.Key}</td>
+                                    <td>{item.data.email}</td>
+                                    <td>{item.data.grade}</td>
+                                    <td>{item.data.date}</td>
+
+                                    <td className='delete-th'>
+                                        <button onClick={() => {remove(ref(db, "Users/" + item.Key))}} className='del-btn'>{<FaTrash />}</button>
+                                    </td>
                                 </tr>
-
-
-                                <Modal show={show} onHide={handleClose}>
-                                    <Modal.Header closeButton>
-                                        <Modal.Title>Conformation</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body><li>Are you sure you want to delete this item?</li></Modal.Body>
-                                    <Modal.Body><li>This cannot be undone.</li></Modal.Body>
-                                    <Modal.Footer>
-                                        <Button variant="secondary" onClick={handleClose}>
-                                            Close
-                                        </Button>
-
-                                        <Button variant="primary" onClick={() => [remove(ref(db, 'Users/' + item.Key)), handleClose()]}>
-                                            Delete
-                                        </Button>
-
-                                        
-                                    </Modal.Footer>
-                                </Modal>
 
                             </>
                         )

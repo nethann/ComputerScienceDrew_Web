@@ -32,8 +32,25 @@ td,th{
     font-weight: normal;
 }
 
+
 tr:nth-child(even){
     background-color: #343434 ;
+}
+
+.th-1{
+    width: 25%;
+}
+
+.th-3{
+    width: 15%;
+}
+
+.th-4{
+    width: 20%;
+}
+
+.th-5{
+    width: 10%;
 }
 
 
@@ -60,4 +77,30 @@ tr:nth-child(even){
 
     color: var(--clr-crimson);
 
+}
+
+
+@media screen and (max-width: 800px) {
+
+    td,th{
+        text-align: center;
+    }
+
+    .Firebase-table{
+        overflow: scroll;
+        
+    }
+
+    .th-1{
+        width: 20%;
+    }
+
+    .th-2{
+        background-color: transparent;
+        width: 30%;
+    }
+
+    .th-4{
+        width: 10%;
+    } 
 }

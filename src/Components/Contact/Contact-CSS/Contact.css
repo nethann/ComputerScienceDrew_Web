@@ -8,7 +8,9 @@
     text-align: center;
 
 
-    height: 100vh;
+    min-height: 130vh;
+
+    background-color: transparent;
 
     color: white; 
 }
@@ -123,9 +125,6 @@
         background-color: transparent;
     }
 
-    .Contact-holder{
-        height: 110vh;
-    }
 
     .Remind-links{
         grid-template-columns: repeat(3, 1fr);
@@ -137,10 +136,6 @@
 
     .Remind-links{
         grid-template-columns: repeat(2,1fr);
-    }
-
-    .Contact-holder{
-        height: 115vh;
     }
 
     .Developer-contact{
@@ -159,10 +154,6 @@
 
 @media screen and (max-width: 600px) {
 
-    .Contact-holder{
-        height: 180vh;
-    }
-
     .Remind-links{
         grid-template-columns: 1fr;
     }
@@ -179,13 +170,5 @@
 
 }
 
-
-@media screen and (max-width: 400px) {
-
-    .Contact-holder{
-        height: 210vh;
-    }
-
-}
 
 

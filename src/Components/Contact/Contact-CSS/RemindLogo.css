@@ -45,12 +45,12 @@
 .Remind-Join{
     text-decoration: none;
 
-    width: 80%;
-    background-color: #ff6c2d29;
-    color: var(--clr-orange);
+    width: 70%;
+    background-color: #ffbf0022;
+    color: var(--clr-yellow);
     padding: 2px;
     
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 

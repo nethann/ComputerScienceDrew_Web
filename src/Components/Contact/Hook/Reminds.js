@@ -9,11 +9,6 @@ import "../Contact-CSS/RemindLogo.css"
 
 export default function Reminds({ Name, Link, RemindLogo }) {
     return (
-        // <a className='Remind-Button'  rel="noopener noreferrer" href={Link} target="_blank">
-        //     <img alt='RemindLogo' className='RemindLogo' src={RemindLogo} />
-        //     <p>@Remind</p>
-        //     {Name}
-        // </a>
 
         <div className='Remind-Holder'>
             <img alt="RemindLogo" className='RemindLogo' src={RemindLogo} /> 

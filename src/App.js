@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 //components 
@@ -46,32 +46,34 @@ import Developer from './Components/Developer/Developer';
 
 function App() {
 
+  const [expanded, setExpanded] = useState(false)
+
 
   return (
     <BrowserRouter>
       <div className='App'>
         <>
-          <Navbar collapseOnSelect bg="background" expand="lg" variant='dark'>
+          <Navbar expanded={expanded} collapseOnSelect bg="background" expand="lg" variant='dark'>
             <Container>
               <Navbar.Brand as={Link} to="/">Drew Charter School</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <NavDropdown title="More" id="basic-nav-dropdown">
-                    <NavDropdown.Item as={Link} to="/developerLogin">Developer <IoIosHammer /> </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/contributors">Contributors </NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setExpanded(false)}  as={Link} to="/developerLogin">Developer <IoIosHammer /> </NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setExpanded(false)}  as={Link} to="/contributors">Contributors </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Nav >
-                  <Nav.Link as={Link} to="/">Home</Nav.Link>
-                  <Nav.Link as={Link} to="/courceExpectations">Cource Expectations</Nav.Link>
+                  <Nav.Link as={Link} onClick={() => setExpanded(false)}  to="/">Home</Nav.Link>
+                  <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/courceExpectations">Cource Expectations</Nav.Link>
 
                   <NavDropdown title="Cources" id="basic-nav-dropdown">
-                    <NavDropdown.Item as={Link} to="/APComputerScience">AP Computer Science</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/WebDevelopment">Web Development</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/BusinessComputerScience">Business/ Computer Science</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setExpanded(false)}  as={Link} to="/APComputerScience">AP Computer Science</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setExpanded(false)} as={Link} to="/WebDevelopment">Web Development</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setExpanded(false)}  as={Link} to="/BusinessComputerScience">Business/ Computer Science</NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                  <Nav.Link onClick={() => setExpanded(false)}  as={Link} to="/contact">Contact</Nav.Link>
 
                 </Nav>
               </Navbar.Collapse>
