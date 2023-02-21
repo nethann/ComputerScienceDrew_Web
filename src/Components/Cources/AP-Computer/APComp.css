@@ -1,8 +1,8 @@
-.Carousels-main{
+.Carousels-main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
     width: 100%;
     background-color: transparent;
@@ -10,7 +10,7 @@
 
 
 
-.Web-spotlights-holder{
+.Web-spotlights-holder {
     margin-top: 70px;
     margin-bottom: 70px;
     color: white;
@@ -21,7 +21,7 @@
     gap: 1em;
 }
 
-.Spotlight-title{
+.Spotlight-title {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
@@ -31,7 +31,7 @@
     color: var(--clr-drew-green);
 }
 
-.Web-spotlights{
+.Web-spotlights {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,7 +41,7 @@
     background-color: transparent;
 }
 
-.Side-1{
+.Side-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,10 +51,10 @@
     background-color: transparent;
 
     width: 100%;
-    
+
 }
 
-.Spotlight-Link-1{
+.Spotlight-Link-1 {
     width: 70%;
 
     padding: 8px;
@@ -71,14 +71,14 @@
     color: white;
 }
 
-.Spotlight-Link-1:hover{
+.Spotlight-Link-1:hover {
     transform: translateY(-4px);
     color: var(--clr-drew-font-color);
 }
 
 
 
-.Side-2{
+.Side-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,28 +89,111 @@
     width: 100%;
 }
 
-.Sides-title{
+.Sides-title {
     margin-top: auto;
     background-color: transparent;
     margin-bottom: auto;
 }
 
-.Spotlight-vid{
+.Spotlight-vid {
     width: 100%;
     height: 400px;
 }
 
-.Sides-title{
+.Sides-title {
     font-size: 20px;
+}
+
+/* Seperator  */
+.Resource-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
 }
 
 
 
+.APComp-Resources-content-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
 
-@media screen and (max-width: 870px){
-    .Web-spotlights{
+}
+
+.APComp-Resource{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2em;
+
+    background-color: transparent;
+    width: 100%;
+}
+
+
+.APComp-i-frame{
+    width: 70%;
+    height:800px;
+}
+
+
+/* Resouce section */
+.APComp-Resource-Btn-Holder{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+
+    width: 70%;
+
+    gap: 1em;
+}
+
+
+.AP-Comp-ResourceTitle{
+    text-align: left;
+
+    font-size: 35px;
+
+    color: var(--clr-drew-green);
+
+    background-color: transparent;
+    padding-left: 50px;
+}
+
+
+.APComp-ResourceBtn{
+    background-color: #6adca32e;
+    padding: 10px;
+
+    width: 80%;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--clr-drew-green);
+
+    border-radius: 5px;
+
+    transition: all 0.1s ease-in;
+}
+
+.APComp-ResourceBtn:hover{
+    color: var(--clr-drew-green);
+    transform: translateY(-3px);
+}
+
+
+@media screen and (max-width: 870px) {
+    .Web-spotlights {
         gap: 3em;
         flex-direction: column;
     }
-  }
-  
+}
+
+

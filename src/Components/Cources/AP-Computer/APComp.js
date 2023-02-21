@@ -6,6 +6,14 @@ import Carousels from '../Utils/ComputerScience_Carousels/Carousels'
 
 import "./APComp.css"
 
+//importing PDF
+import CompSci_Resources from "./PDFs/CompSci_Resources.pdf";
+import APComp_Syllabus from "./PDFs/APComp_Syllabus.pdf";
+
+import Accordion from 'react-bootstrap/Accordion';
+
+
+
 export default function APComp() {
     return (
         <div className='Page-align'>
@@ -32,6 +40,31 @@ export default function APComp() {
                             <p className='Sides-title'>Program a Friend</p>
                             <iframe className='Spotlight-vid' src="https://www.youtube.com/embed/GibiNy4d4gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
+
+                    </div>
+                </section>
+
+
+                <section className='Resource-section'>
+                    <div className='AP-Comp-ResourceTitle'>
+                        <p className='Margin-maker-txt'>Resources</p>
+                    </div>
+
+                    <div className='APComp-Resources-content-holder'>
+                        <div className='APComp-Resource'>
+                            <iframe className='APComp-i-frame' title='Class-Syllabus' src={APComp_Syllabus}></iframe>
+                        </div>
+
+                        <div className='APComp-Resource'>
+                            <div className='APComp-Resource-Btn-Holder'>
+                                <a href='https://meinzeit.com/APConsult-CSP-5Day/LO-EK.htm' className='APComp-ResourceBtn' target="_blank">Carriculum Framework in a Nutshell</a>
+                                <a href='https://www.mathsisfun.com/metric-numbers.html' className='APComp-ResourceBtn' target="_blank">Metric Numbers</a>
+                            </div>
+                            <iframe className='APComp-i-frame' title='Class-Syllabus' src={CompSci_Resources}></iframe>
+                        </div>
+
+
+
                     </div>
 
                 </section>
