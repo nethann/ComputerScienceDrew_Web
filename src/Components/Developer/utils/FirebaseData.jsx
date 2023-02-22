@@ -23,7 +23,7 @@ export default function DataFetch() {
 
 
     useEffect(() => {
-        const member_Count = ref(db, 'Users/');
+        const member_Count = ref(db, 'Developer Registered Users/');
 
         onValue(member_Count, (snapshot) => {
 
@@ -70,7 +70,7 @@ export default function DataFetch() {
                                     <td>{item.data.date}</td>
 
                                     <td className='delete-th'>
-                                        <button onClick={() => {remove(ref(db, "Users/" + item.Key))}} className='del-btn'>{<FaTrash />}</button>
+                                        <button onClick={() => {remove(ref(db, "Developer Registered Users/" + item.Key))}} className='del-btn'>{<FaTrash />}</button>
                                     </td>
                                 </tr>
 

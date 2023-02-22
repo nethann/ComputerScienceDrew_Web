@@ -1,0 +1,97 @@
+.PubilcContributors-Section{
+    background-color: transparent;
+    min-height: 90vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    color: white;
+
+    background-color: transparent;
+}
+
+
+.PublicContributors-Holder{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+
+    background-color: transparent;
+
+    width: 95%;
+
+    padding: 30px;
+}
+
+.PublicContributor-Cards{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    background-color: var(--clr-card-clr-2);
+
+    width: 100%;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    overflow-y: scroll;
+
+
+}
+
+.PublicContributor_Txt{
+    overflow-wrap: break-word;
+}
+
+.PublicContributor_Name{
+    font-size: 20px;
+    color: var(--clr-drew-green);
+}
+
+.PublicContributor_Role{
+    background-color: #ffbf0022;
+    color: var(--clr-yellow);
+
+    border-radius: 20px;
+
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .PublicContributors-Holder{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .PublicContributors-Holder{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .PublicContributors-Holder{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+}
+
+
+

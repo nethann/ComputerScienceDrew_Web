@@ -7,6 +7,7 @@ import CourceExpectation from './Components/Cource-expectation/CourceExpectation
 import Contact from './Components/Contact/Contact';
 import APComp from "./Components/Cources/AP-Computer/APComp";
 import WebDevelopment from './Components/Cources/Web-Development/WebDevelopment';
+import ContributorsPublic from './Components/Contributors/ContributorsPublic';
 
 //Developer login landing page
 import DeveloperLogin from './Components/DeveloperLogin/DeveloperLogin';
@@ -94,6 +95,8 @@ function App() {
 
             {/* Developer SignUp */}
             <Route path="DeveloperSignUp" element={<DeveloperSignUp />} />
+
+            <Route path="/Contributors" element={<ContributorsPublic />} /> 
 
 
             {/* Cources */}

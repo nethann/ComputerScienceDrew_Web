@@ -1,0 +1,35 @@
+.Contributor-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    padding: 15px;
+
+    background-color: transparent;
+}
+
+
+.Input-Section{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+
+    background-color: transparent;
+
+}
+
+.Contributor-Inputs{
+    outline: none;
+}
+
+
+.ContributorsTable-section{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.Contributors-Title{
+    text-align: center;
+}

@@ -22,7 +22,7 @@ export default function DeveloperSignUp() {
 
 
   useEffect(() => {
-    const member_Count = ref(db, 'Users/');
+    const member_Count = ref(db, 'Developer Registered Users/');
 
 
     onValue(member_Count, (snapshot) => {
@@ -71,7 +71,7 @@ export default function DeveloperSignUp() {
       const currentYear = date.getFullYear();
       const currentMonth = date.toLocaleString('default', { month: 'long' });
 
-      set(ref(db, 'Users/' + registerName), {
+      set(ref(db, 'Developer Registered Users/' + registerName), {
         email: registerEmail,
         grade: gradeLevel,
         date: `${currentMonth} ${currentDay}, ${currentYear}`
