@@ -9,7 +9,7 @@ import Contributors from "./utils/Contributors"
 export default function Developer() {
   return (
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="home"
       id="uncontrolled-tab-example"
       className="mb-3"
     >

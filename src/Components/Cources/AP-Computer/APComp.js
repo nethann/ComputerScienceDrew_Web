@@ -46,21 +46,21 @@ export default function APComp() {
 
 
                 <section className='Resource-section'>
-                    <div className='AP-Comp-ResourceTitle'>
+                    <div className='ResourceTitle'>
                         <p className='Margin-maker-txt'>Resources</p>
                     </div>
 
-                    <div className='APComp-Resources-content-holder'>
-                        <div className='APComp-Resource'>
-                            <iframe className='APComp-i-frame' title='Class-Syllabus' src={APComp_Syllabus}></iframe>
+                    <div className='Comp-Resources-content-holder'>
+                        <div className='Comp-Resource'>
+                            <iframe className='Comp-i-frame' title='Class-Syllabus' src={APComp_Syllabus}></iframe>
                         </div>
 
-                        <div className='APComp-Resource'>
-                            <div className='APComp-Resource-Btn-Holder'>
-                                <a href='https://meinzeit.com/APConsult-CSP-5Day/LO-EK.htm' className='APComp-ResourceBtn' target="_blank">Carriculum Framework in a Nutshell</a>
-                                <a href='https://www.mathsisfun.com/metric-numbers.html' className='APComp-ResourceBtn' target="_blank">Metric Numbers</a>
+                        <div className='Comp-Resource'>
+                            <div className='Comp-Resource-Btn-Holder'>
+                                <a href='https://meinzeit.com/APConsult-CSP-5Day/LO-EK.htm' className='Comp-ResourceBtn' target="_blank">Carriculum Framework in a Nutshell</a>
+                                <a href='https://www.mathsisfun.com/metric-numbers.html' className='Comp-ResourceBtn' target="_blank">Metric Numbers</a>
                             </div>
-                            <iframe className='APComp-i-frame' title='Class-Syllabus' src={CompSci_Resources}></iframe>
+                            <iframe className='Comp-i-frame' title='Class-Syllabus' src={CompSci_Resources}></iframe>
                         </div>
 
 

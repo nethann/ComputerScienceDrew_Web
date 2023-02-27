@@ -7,6 +7,7 @@ import CourceExpectation from './Components/Cource-expectation/CourceExpectation
 import Contact from './Components/Contact/Contact';
 import APComp from "./Components/Cources/AP-Computer/APComp";
 import WebDevelopment from './Components/Cources/Web-Development/WebDevelopment';
+import BusinessComp from './Components/Cources/Business-Computer/BusinessComp';
 import ContributorsPublic from './Components/Contributors/ContributorsPublic';
 
 //Developer login landing page
@@ -102,6 +103,7 @@ function App() {
             {/* Cources */}
             <Route path="/APComputerScience" element={<APComp />} />
             <Route path="/WebDevelopment" element={<WebDevelopment />} />
+            <Route path="/BusinessComputerScience" element={<BusinessComp />} />
           </Routes>
         </div>
       </div>

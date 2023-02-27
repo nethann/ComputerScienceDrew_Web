@@ -114,7 +114,7 @@
 
 
 
-.APComp-Resources-content-holder{
+.Comp-Resources-content-holder{
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -124,7 +124,7 @@
 
 }
 
-.APComp-Resource{
+.Comp-Resource{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,14 +137,14 @@
 }
 
 
-.APComp-i-frame{
+.Comp-i-frame{
     width: 70%;
     height:800px;
 }
 
 
 /* Resouce section */
-.APComp-Resource-Btn-Holder{
+.Comp-Resource-Btn-Holder{
     display: flex;
     flex-direction: row;
     background-color: transparent;
@@ -155,7 +155,7 @@
 }
 
 
-.AP-Comp-ResourceTitle{
+.ResourceTitle{
     text-align: left;
 
     font-size: 35px;
@@ -167,7 +167,7 @@
 }
 
 
-.APComp-ResourceBtn{
+.Comp-ResourceBtn{
     background-color: #6adca32e;
     padding: 10px;
 
@@ -183,7 +183,7 @@
     transition: all 0.1s ease-in;
 }
 
-.APComp-ResourceBtn:hover{
+.Comp-ResourceBtn:hover{
     color: var(--clr-drew-green);
     transform: translateY(-3px);
 }
