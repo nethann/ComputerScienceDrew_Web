@@ -1,0 +1,75 @@
+.GithubRepo-section{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    background-color: transparent;
+
+}
+
+.DeveloperHome-Description{
+    color: white;
+    padding: 20px;
+}
+
+.Developer-Welcome-title{
+    color: var(--clr-drew-green);
+    font-size: 25px;
+}
+
+.Developer-Info-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.Developer-Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    gap: 0.5em;
+
+    background-color: var(--clr-card-clr-2);
+    border-radius: 5px;
+}
+
+.Developer-Card-title{
+    text-align: center;
+    font-size: 20px;
+
+    color: var(--clr-drew-green);
+}
+
+.Developer-Card-Description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: transparent;
+}
+
+
+
+/* Developer special items */
+.developer-special-item{
+    background-color: #e9295c17;
+    color: var(--clr-crimson);
+
+    font-size: 14px;
+
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.Developer-link-tag{
+    color: var(--clr-drew-green);
+    font-size: 14px;
+
+    transition: all 0.1s ease-in;
+}
+
+.Developer-link-tag:hover{
+    color: var(--clr-drew-green);
+    transform: translateY(-3px);
+}

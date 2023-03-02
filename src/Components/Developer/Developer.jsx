@@ -3,9 +3,9 @@ import React from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
-import DataFetch from './utils/FirebaseData';
+import FirebaseData from "./utils/DeveloperHome/FirebaseData"
 import Contributors from "./utils/Contributors"
-
+import DeveloperHome from './utils/DeveloperHome/DeveloperHome';
 export default function Developer() {
   return (
     <Tabs
@@ -14,20 +14,17 @@ export default function Developer() {
       className="mb-3"
     >
       <Tab eventKey="home" title="Home">
-        <p>Home</p>
+        <DeveloperHome />
       </Tab>
 
       <Tab eventKey="profile" title="Registered Users">
-        <DataFetch />
+        <FirebaseData />
       </Tab>
       
       <Tab eventKey="Contributors" title="Contributors">
         <Contributors /> 
       </Tab>
 
-      <Tab eventKey="contact" title="Events">
-        <p>Contact</p>
-      </Tab>
 
     </Tabs>
   )

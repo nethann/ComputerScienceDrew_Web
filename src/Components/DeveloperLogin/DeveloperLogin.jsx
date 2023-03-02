@@ -69,11 +69,12 @@ export default function DeveloperLogin() {
                             <p className='Password-title'>Password: </p>
                             <input
                                 className='Password-input'
-                                type="text"
+                                type="password"
                                 id="message"
                                 name="message"
                                 onChange={handleValues}
                                 value={inputText}
+                                
                             />
                         </div>
 

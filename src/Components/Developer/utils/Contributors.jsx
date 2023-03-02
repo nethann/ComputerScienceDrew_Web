@@ -122,38 +122,42 @@ export default function ContributorsData() {
           <div className='ContributorsTable-section'>
             <p className='Contributors-Title'>Contributors Database</p>
 
-            <table className='Firebase-table' >
-              <thead>
-                <tr className='Special-tr'>
-                  <th className='th-1'>Name</th>
-                  <th className='th-2'>Email</th>
-                  <th className='th-4'>Date</th>
-                  <th className='th-4'>Role</th>
-                  <th className='th-5'>Delete</th>
-                </tr>
-              </thead>
+            <div style={{width: '100%'}} className="Firebase-table-holder">
+              <table className='Firebase-table' >
+                <thead>
+                  <tr className='Special-tr'>
+                    <th className='th-1'>Name</th>
+                    <th className='th-2'>Email</th>
+                    <th className='th-4'>Date</th>
+                    <th className='th-4'>Role</th>
+                    <th className='th-5'>Delete</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                {firebaseData.firebaseData?.map(item => {
+                <tbody>
+                  {firebaseData.firebaseData?.map(item => {
 
-                  return (
-                    <>
-                      <tr>
-                        <td>{item.Key}</td>
-                        <td>{item.data.email}</td>
-                        <td>{item.data.date}</td>
-                        <td>{item.data.role}</td>
+                    return (
+                      <>
+                        <tr>
+                          <td>{item.Key}</td>
+                          <td>{item.data.email}</td>
+                          <td>{item.data.date}</td>
+                          <td>{item.data.role}</td>
 
-                        <td className='delete-th'>
-                          <button onClick={() => { remove(ref(db, "Contributors/" + item.Key)) }} className='del-btn'>{<FaTrash />}</button>
-                        </td>
-                      </tr>
+                          <td className='delete-th'>
+                            <button onClick={() => { remove(ref(db, "Contributors/" + item.Key)) }} className='del-btn'>{<FaTrash />}</button>
+                          </td>
+                        </tr>
 
-                    </>
-                  )
-                })}
-              </tbody>
-            </table>
+                      </>
+                    )
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+
 
           </div>
         </section>
